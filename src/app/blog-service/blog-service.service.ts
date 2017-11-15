@@ -16,8 +16,12 @@ export class BlogServiceService {
       .map(res => res.json())
   }
 
+  getBlog(id){
+    return this.http.get(BASE_URL + id.toString())
+      .map(res => res.json());
+  }
   postData(data) {
-    return this.http.post(BASE_URL,data, header)
+    return this.http.post(BASE_URL, data, header)
       .map(res => res.json())
 
   }

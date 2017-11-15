@@ -1,0 +1,31 @@
+<div class='panel panel-primary' style="width: 1000px; margin: 0 auto;" *ngIf='blog'>
+  <div class='panel-heading'>
+    {{ blog.Title}}
+  </div>
+
+  <div class='panel-body'>
+    <div class='row'>
+      <div class='col-md-10'>
+        <div class='row'>
+
+          <div class='col-md-10'>Title: {{blog.Title}}</div>
+          <br>
+        </div>
+        <div class='row'>
+          <div class='col-md-10'><h4>{{blog.body}}</h4></div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3'>Created By:</div>
+          <div class='col-md-6'>{{blog.createdByName}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3'>Created On:</div>
+          <div class='col-md-6'>{{blog.createdOn}}</div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>

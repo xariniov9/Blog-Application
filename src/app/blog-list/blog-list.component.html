@@ -5,7 +5,17 @@
     All Blogs
   </div>
   <div class='panel-body'>
-
+    <div class='row'>
+      <div class='col-md-2'>Search by Title:</div>
+      <div class='col-md-4'>
+        <input type='text' [(ngModel)]='listFilter' />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-6'>
+        <h3>Filtered by: {{listFilter}} </h3>
+      </div>
+    </div>
 
     <div class='table-responsive'>
       <table class='table'
@@ -19,8 +29,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor='let blog of blogs'>
-          <td><a>
+        <tr *ngFor='let blog of filteredBlogs'>
+          <td><a [routerLink]="['/blogs', blog.id]">
             {{ blog.Title }}
           </a>
           </td>
@@ -79,7 +89,7 @@
 
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !body.valid }">
         <label for="body">Body</label>
-        <input type="text" class="form-control" name="body" [(ngModel)]="model.body" #body="ngModel" required />
+        <textarea rows="20" cols="50" class="form-control" name="body" [(ngModel)]="model.body" #body="ngModel" required ></textarea>
       </div>
 
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !category.valid }">

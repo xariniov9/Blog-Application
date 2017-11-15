@@ -9,17 +9,23 @@ import { AuthenticationService } from "./_services/authentication.service";
 import { BlogServiceService} from "./blog-service/blog-service.service";
 import {HttpModule} from "@angular/http";
 import { BlogListComponent } from './blog-list/blog-list.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { BlogGuardService} from './blog-guard.service';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'blogs', component: BlogListComponent}
+  {path: 'blogs', component: BlogListComponent},
+  { path: 'blogs/:id',
+    canActivate: [ BlogGuardService ],
+    component: BlogDetailComponent}
 
 ];
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    BlogListComponent
+    BlogListComponent,
+    BlogDetailComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -29,7 +35,7 @@ const appRoutes: Routes = [
     HttpModule,
     FormsModule
   ],
-  providers: [AuthenticationService, BlogServiceService],
+  providers: [AuthenticationService, BlogServiceService, BlogGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
