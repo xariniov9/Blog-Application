@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "himanshu",
+      "password": "mangoes",
+      "favorites": [
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "username": "kanav",
+      "password": "grapes",
+      "favorites": [
+        2
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "createdBy": 1,
+      "createdByName": "himanshu",
+      "Title": "My first blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt tellus a tellus pretium, ut rhoncus magna sagittis. Vestibulum risus lectus, lobortis eu imperdiet in, maximus a tellus. Phasellus vel turpis accumsan, tempus libero sed, dapibus quam. Etiam sodales sapien sed diam suscipit vestibulum. Proin porttitor est vitae est maximus ultricies. Donec sit amet ornare mi. Aliquam lorem magna, venenatis ac enim vel, fermentum tempor dolor. Curabitur a purus nec magna mattis sagittis id eu enim. Mauris faucibus lacinia dui. Aenean laoreet justo ut suscipit consectetur. Phasellus ac iaculis sapien.",
+      "createdOn": "Mon Nov 13 2017",
+      "category": "Technical"
+    },
+    {
+      "id": 2,
+      "createdBy": 2,
+      "createdByName": "kanav",
+      "Title": "My Second blog",
+      "body": "Nam porttitor ornare erat, sit amet ultricies libero. Nullam consectetur, lectus quis laoreet fringilla, orci nisi bibendum nisl, eu gravida diam urna sit amet massa. Duis a magna sagittis, dapibus lorem sodales, sodales leo. Proin nec varius ligula. Etiam vestibulum ultricies libero et ornare. Suspendisse potenti. Proin finibus nunc nulla, at iaculis orci dictum vitae. Vivamus eu dapibus risus.",
+      "createdOn": "Mon Nov 13 2017",
+      "category": "Non Technical"
+    },
+    {
+      "Title": "Third Blog",
+      "body": "Aliquam erat volutpat. In rhoncus libero eu elit maximus ullamcorper. Quisque ac scelerisque metus. Nunc consectetur interdum odio, sit amet pellentesque dui convallis ut. Nam a velit non est interdum imperdiet non sit amet lorem. Vivamus sed nibh a mi ullamcorper accumsan. Quisque malesuada elit id lobortis lobortis. Fusce lacinia lectus nec hendrerit auctor. Nulla porta lectus eu lorem tempus, sed porttitor felis varius. Aliquam non varius nisl. Nunc id nulla ut purus mattis ultricies et vitae est.",
+      "createdBy": 1,
+      "createdByName": "himanshu",
+      "createdOn": "Mon Nov 13 2017",
+      "category": "Non Technical",
+      "id": 3
+    },
+    {
+      "Title": "Fifth",
+      "body": "Aliquam erat volutpat. In rhoncus libero eu elit maximus ullamcorper. Quisque ac scelerisque metus. Nunc consectetur interdum odio, sit amet pellentesque dui convallis ut. Nam a velit non est interdum imperdiet non sit amet lorem. Vivamus sed nibh a mi ullamcorper accumsan. Quisque malesuada elit id lobortis lobortis. Fusce lacinia lectus nec hendrerit auctor. Nulla porta lectus eu lorem tempus, sed porttitor felis varius. Aliquam non varius nisl. Nunc id nulla ut purus mattis ultricies et vitae est.",
+      "createdBy": 1,
+      "createdByName": "kanav",
+      "createdOn": "Mon Nov 13 2017",
+      "category": "Technical",
+      "id": 4
+    }
+  ]
+}
