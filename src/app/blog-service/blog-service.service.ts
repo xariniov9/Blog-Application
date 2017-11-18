@@ -32,8 +32,9 @@ export class BlogServiceService {
   }
 
   deleteData(data) {
-    return this.http.delete(`BASE_URL${data.id}`)
-      .map(res => res.json())
+      const deleteURL = BASE_URL + `${data.id}`;
+      return this.http.delete(deleteURL)
+        .map(res => res.json());
   }
   checkData(data) {
     return data.id?this.updateData(data): this.postData(data)

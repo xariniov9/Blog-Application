@@ -44,33 +44,6 @@
       "createdOn": "Mon Nov 13 2017",
       "category": "Non Technical",
       "id": 3
-    },
-    {
-      "Title": "random blog",
-      "body": "jhkhsa",
-      "createdBy": 1,
-      "createdByName": "himanshu",
-      "createdOn": "Wed Nov 15 2017",
-      "category": "Technical",
-      "id": 5
-    },
-    {
-      "Title": "Random blog number 2",
-      "body": "ajnk;sjkahskdjhasdxa",
-      "createdBy": 1,
-      "createdByName": "himanshu",
-      "createdOn": "Wed Nov 15 2017",
-      "category": "Non Technical",
-      "id": 6
-    },
-    {
-      "Title": "Delete, Update, mark favorite left",
-      "body": "this is to remind me what else is remaining!",
-      "createdBy": 1,
-      "createdByName": "kanav",
-      "createdOn": "Wed Nov 15 2017",
-      "category": "faltu",
-      "id": 7
     }
   ]
 }

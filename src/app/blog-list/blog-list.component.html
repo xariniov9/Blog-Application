@@ -64,7 +64,7 @@
         </thead>
         <tbody>
         <tr *ngFor='let blog of favoriteBlogs'>
-          <td><a>
+          <td><a [routerLink]="['/blogs', blog.id]">
             {{ blog.Title }}
           </a>
           </td>

@@ -23,7 +23,10 @@
           <div class='col-md-6'>{{blog.createdOn}}</div>
         </div>
 
-
+        <div *ngIf="currentUser.id==blog.createdBy">
+          <input type="button" value="Edit" (click)="Edit()"/>
+          <input type="button" value="Delete" (click)="Delete()"/>
+        </div>
       </div>
 
     </div>
