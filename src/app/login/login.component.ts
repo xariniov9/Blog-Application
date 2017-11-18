@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   model: any = {};
   loading = false;
   returnUrl: string;
-
+  currentUser: Object;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     //  console.log("inside ngOnInit");
+    this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     this.authenticationService.logout();
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/login';
   }
@@ -35,12 +36,15 @@ export class LoginComponent implements OnInit {
           if(data) {
             this.returnUrl = '/blogs';
             this.router.navigateByUrl(this.returnUrl);
+            window.location.reload();
           } else {
             alert("Incorrect Username/Password!");
+            window.location.reload();
           }
         },
         error => {
           this.loading = false;
+          window.location.reload();
         });
   }
 }

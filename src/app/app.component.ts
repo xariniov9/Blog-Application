@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import {FroalaEditorDirective} from "angular-froala-wysiwyg";
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,25 @@ import {FroalaEditorDirective} from "angular-froala-wysiwyg";
 })
 export class AppComponent {
   title = "Himanshu's Blogger";
+  IsHidden = false;
+  currentUser: Object;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-  ){ }
+  ) {
+    this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if(this.currentUser)
+      this.IsHidden = true;
+    else this.IsHidden = false;
+  }
   renderForm() {
+    this.IsHidden = true;
     this.router.navigateByUrl('/login');
+  }
+  logOut() {
+    this.IsHidden = false;
+    this.currentUser = null;
+    localStorage.removeItem('currentUser');
+    window.location.reload();
   }
 }

@@ -9,9 +9,17 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "username": "kanav",
       "password": "grapes",
+      "favorites": [
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "username": "user",
+      "password": "user",
       "favorites": [
         2
       ]
@@ -19,28 +27,37 @@
   ],
   "blogs": [
     {
-      "id": 2,
-      "createdBy": 2,
-      "createdByName": "kanav",
-      "Title": "My Second blog",
-      "body": "Nam porttitor ornare erat, sit amet ultricies libero. Nullam consectetur, lectus quis laoreet fringilla, orci nisi bibendum nisl, eu gravida diam urna sit amet massa. Duis a magna sagittis, dapibus lorem sodales, sodales leo. Proin nec varius ligula. Etiam vestibulum ultricies libero et ornare. Suspendisse potenti. Proin finibus nunc nulla, at iaculis orci dictum vitae. Vivamus eu dapibus risus.",
-      "createdOn": "Mon Nov 13 2017",
-      "category": "Non Technical"
+      "Title": "kljl",
+      "body": "<p>lkjlkjHello, Add your blog here!</p>",
+      "createdOn": "Sat Nov 18 2017",
+      "category": "lkjlkj",
+      "id": 1
     },
     {
-      "Title": "kj",
-      "body": "<p>Hello, Froala!</p>",
-      "createdBy": 1,
-      "createdByName": "himanshu",
+      "Title": "Himanshu is great",
+      "body": "<blockquote><p>himanshu is great !</p></blockquote><p>hello this is a great qoute by Himanshu Tiwari!</p>",
+      "createdBy": 2,
+      "createdByName": "kanav",
       "createdOn": "Sat Nov 18 2017",
-      "category": ",kklj",
+      "category": "Non Technical",
+      "id": 2
+    },
+    {
+      "Title": "Font family",
+      "body": "<p><span style=\"font-family: Georgia,serif;\">Hello this is georgia and <span style=\"font-family: Impact,Charcoal,sans-serif;\">This is Impact !</span></span></p>",
+      "createdBy": 2,
+      "createdByName": "kanav",
+      "createdOn": "Sat Nov 18 2017",
+      "category": "Non Technical",
       "id": 3
     },
     {
-      "body": "<hr><p>Hello, Froala!<span class=\"fr-emoticon fr-deletable fr-emoticon-img\" style=\"background: url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.0.1/assets/svg/1f60b.svg);\">&nbsp;</span>&nbsp;</p>",
+      "Title": "photo",
+      "body": "<p><img src=\"https://i.froala.com/download/f1b2f89b9e3ba40b81245b2d8a25cc82d11ccd35.jpg?1511008829\" style=\"width: 300px;\" class=\"fr-fic fr-dib\"></p>",
       "createdBy": 1,
       "createdByName": "himanshu",
       "createdOn": "Sat Nov 18 2017",
+      "category": "Technical",
       "id": 4
     }
   ]

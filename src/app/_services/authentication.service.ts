@@ -14,8 +14,6 @@ export class AuthenticationService {
   login(username: string, password: string) {
     return this.http.get(BASE_URL)
       .map(res => {
-        console.log(res.json());
-
         let userData = res.json();
         var authUser = userData.find((user)=> user.username === username && user.password ===password);
 

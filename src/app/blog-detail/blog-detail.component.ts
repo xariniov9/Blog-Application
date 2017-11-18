@@ -18,7 +18,7 @@ export class BlogDetailComponent implements OnInit {
       .subscribe((data) => {
         this.blog = data;
       });
-    this.currentUser = JSON.parse(localStorage.currentUser);
+    this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
   }
   Delete() {
     if (confirm('Are you sure to delete?')) {

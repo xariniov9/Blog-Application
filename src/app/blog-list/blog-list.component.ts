@@ -16,22 +16,22 @@ export class BlogListComponent implements   OnInit {
   _listFilter: string;
   public options: Object = {
     charCounterCount: true,
-    height: 400,
+    height: 300,
     events : {
       'froalaEditor.focus' : function(e, editor) {
         console.log(editor.selection.get());
       }
     }
-  }
+  };
   constructor(private request: BlogServiceService) {}
   ngOnInit() {
     this.request.loadData()
       .subscribe((data) => {
         this.blogs = data;
         this.filteredBlogs = this.blogs;
-        this.currentUser = JSON.parse(localStorage.currentUser);
+        this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
         this.favoriteBlogs = this.blogs.filter((blog) => {
-          return JSON.parse(localStorage.currentUser).favorites.indexOf(blog['id']) > -1;
+          return this.currentUser['favorites'].indexOf(blog['id']) > -1;
         });
       });
   }
@@ -46,6 +46,14 @@ export class BlogListComponent implements   OnInit {
       createdOn: new Date(Date.now()).toDateString(),
       category: this.model.category
     };
+    if (this.model.Title == null || this.model.Title.trim() === ''){
+      alert('Title cannot be empty!');
+      return;
+    }
+    if (this.model.category == null || this.model.category.trim() === ''){
+      alert('Category cannot be empty!');
+      return;
+    }
     this.request.postData(blog)
       .subscribe(data => {
         this.blogs.push(data);

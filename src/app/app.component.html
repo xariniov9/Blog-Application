@@ -1,14 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}
-  </h1>
-  <input type="button" value="Login" (click)="renderForm()">
+
+<nav class="navbar navbar-left" style="width: 95%; margin: 0 auto;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{title}}
+    </div>
+
+    <ul class="nav navbar-nav" style="float: right">
+      <li style=" margin-left: 10px;" *ngIf="currentUser">Welcome {{currentUser['username']}}</li>
+      <li><input style="margin-left: 10px;" *ngIf="!currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="renderForm()" value="LogIn"/></li>
+      <li><input style="margin-left: 10px;" *ngIf="currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="logOut()" value="Log Out"/></li>
+    </ul>
+  </div>
+</nav>
+<div class="row" style="width: 100%; margin: 0 auto;">
+<div class="jumbotron" [hidden]="IsHidden" style="text-align: left">
+  <h1>Himanshu's Blogger</h1>
+  <p>This is a simple blog application made by Himanshu Tiwari. Explore this application by using username and password as "user"</p>
+  <input type="button" class="btn btn-primary btn-lg"  role="button" (click)="renderForm()" value="LogIn"/>
 </div>
-
-
-
-<router-outlet></router-outlet>
+</div>
+<br>
+<router-outlet style="width: 300px; margin: 0 auto;"></router-outlet>
 
 
 
