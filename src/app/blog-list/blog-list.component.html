@@ -87,18 +87,17 @@
         <input type="text" class="form-control" name="Title" [(ngModel)]="model.Title" #Title="ngModel" required />
       </div>
 
-      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !body.valid }">
-        <label for="body">Body</label>
-        <textarea rows="20" cols="50" class="form-control" name="body" [(ngModel)]="model.body" #body="ngModel" required ></textarea>
-      </div>
+
+
+      <div class="form-group" [froalaEditor]="options"  name="body" [(ngModel)]="model.body" #body="ngModel" required>Hello, Add your blog here!</div>
 
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !category.valid }">
         <label for="category">Category</label>
         <input type="text" class="form-control" name="category" [(ngModel)]="model.category" #category="ngModel" required />
       </div>
 
+
       <input type="button" value="Add Blog" (click)="AddBlog()">
     </form>
-
   </div>
 </div>

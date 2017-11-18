@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {BlogServiceService} from '../blog-service/blog-service.service';
 
-
 @Component({
   selector: 'app-blog-list',
   templateUrl: './blog-list.component.html',
@@ -15,7 +14,15 @@ export class BlogListComponent implements   OnInit {
   favoriteBlogs: Object[];
   filteredBlogs: Object [];
   _listFilter: string;
-
+  public options: Object = {
+    charCounterCount: true,
+    height: 400,
+    events : {
+      'froalaEditor.focus' : function(e, editor) {
+        console.log(editor.selection.get());
+      }
+    }
+  }
   constructor(private request: BlogServiceService) {}
   ngOnInit() {
     this.request.loadData()
@@ -58,4 +65,5 @@ export class BlogListComponent implements   OnInit {
     return this.blogs.filter((blog: Object) =>
       blog['Title'].toLocaleLowerCase().indexOf(filterBy) !== -1);
   }
+
 }

@@ -12,6 +12,9 @@ import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogGuardService} from './blog-guard.service';
 
+//wysiwyg editor
+import { FroalaEditorModule, FroalaViewModule } from 'angular2-froala-wysiwyg';
+
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'blogs', component: BlogListComponent},
@@ -33,7 +36,9 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot()
   ],
   providers: [AuthenticationService, BlogServiceService, BlogGuardService],
   bootstrap: [AppComponent]
