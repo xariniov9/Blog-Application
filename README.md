@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
+## Installation
+
+Download the repository and run `npm install` to download the dependencies. Make sure you have node installed on your machine.
+
+## Starting application
+
+Run command `npm start` after downloading the dependencies. The application should start on `localhost:4200`
+
+## About
+
+This is a simple blog application developed using `json-server` and `angular-cli` . You can log in to the application using the username as 'himanshu' and password as 'mangoes'.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
