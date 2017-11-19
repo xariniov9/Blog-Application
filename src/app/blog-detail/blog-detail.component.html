@@ -13,7 +13,7 @@
           <br>
         </div>
         <div class='row'>
-          <div [innerHTML] = "blog.body"></div>
+          <div [innerHTML] = "blog.body | safeHtml"></div>
         </div>
         <div class='row'>
           <div class='col-md-3'>Created By:</div>

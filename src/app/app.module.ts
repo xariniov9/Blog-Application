@@ -14,6 +14,7 @@ import { BlogGuardService} from './blog-guard.service';
 
 //wysiwyg editor
 import { FroalaEditorModule, FroalaViewModule } from 'angular2-froala-wysiwyg';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     BlogListComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    SafeHtmlPipe
   ],
   imports: [
     RouterModule.forRoot(
