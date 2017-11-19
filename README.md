@@ -14,10 +14,6 @@ Run command `npm start` after downloading the dependencies. The application shou
 
 This is a simple blog application developed using `json-server` and `angular-cli` . You can log in to the application using the username as 'himanshu' and password as 'mangoes'.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
