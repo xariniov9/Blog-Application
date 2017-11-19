@@ -5,7 +5,6 @@
       "username": "himanshu",
       "password": "mangoes",
       "favorites": [
-        1,
         2,
         4
       ]
@@ -29,13 +28,6 @@
   ],
   "blogs": [
     {
-      "Title": "kljl",
-      "body": "<p>lkjlkjHello, Add your blog here!</p>",
-      "createdOn": "Sat Nov 18 2017",
-      "category": "lkjlkj",
-      "id": 1
-    },
-    {
       "Title": "Himanshu is great",
       "body": "<blockquote><p>himanshu is great !</p></blockquote><p>hello this is a great qoute by Himanshu Tiwari!</p>",
       "createdBy": 2,
@@ -45,13 +37,31 @@
       "id": 2
     },
     {
-      "Title": "Font family",
-      "body": "<p><span style=\"font-family: Georgia,serif;\">Hello this is georgia and <span style=\"font-family: Impact,Charcoal,sans-serif;\">This is Impact !</span></span></p>",
+      "Title": "My First Blog",
+      "body": "<p style=\"text-align: center;\"><strong><span style=\"font-family: Georgia, serif; font-size: 36px;\">My First Blog</span></strong></p><p style=\"text-align: justify;\"><strong><span style=\"font-family: Arial,Helvetica,sans-serif;\">Lorem ipsum&nbsp;</span></strong><span style=\"font-family: Arial,Helvetica,sans-serif;\">dolor sit amet, consectetur adipiscing elit. Integer sed orci in augue consectetur condimentum non ut felis. Praesent non lacus ligula. In faucibus risus sem, nec egestas ante interdum nec. Suspendisse sed ante eu purus congue rhoncus id ac dolor. Duis mi nunc, gravida a suscipit sit amet, pellentesque a nunc. Morbi euismod est vitae nunc venenatis, id sagittis magna interdum. Praesent pretium gravida neque, nec ultricies libero. Praesent posuere consectetur augue, non posuere ipsum pellentesque ut. Morbi venenatis dolor vel nisl consequat, id lobortis tortor hendrerit.</span></p><p style=\"text-align: justify;\"><span style=\"font-family: Arial,Helvetica,sans-serif;\">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent dapibus lectus in arcu laoreet, sed lacinia tortor molestie. Praesent facilisis feugiat quam ac dignissim. Vivamus luctus sapien vel ipsum vehicula interdum. Ut rutrum ipsum ligula, vel consectetur justo pellentesque quis. Nulla efficitur commodo sem nec mollis. Morbi congue aliquet dui, non iaculis urna suscipit sit amet. Aliquam erat volutpat. Donec suscipit quis nibh in commodo. Quisque ultrices massa vel justo tempor, eu mattis lorem aliquet.</span></p><p style=\"text-align: justify;\"><span style=\"font-family: Arial,Helvetica,sans-serif;\">Aliquam viverra tellus ut lacus aliquet elementum. Curabitur at maximus diam. Duis vulputate dignissim diam consectetur commodo. Morbi non magna ultricies, scelerisque elit convallis, consequat arcu. Phasellus at urna volutpat, posuere augue sed, posuere augue. Nam eros lectus, consectetur nec venenatis faucibus, porta et sem. Praesent vel feugiat magna. Vestibulum sed molestie enim, in sagittis urna. Praesent euismod, est sit amet laoreet egestas, ex dui placerat enim, sed egestas ante ipsum vel metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean venenatis eget tellus et sollicitudin. Sed in dolor ullamcorper erat tincidunt malesuada lacinia et sem. Fusce risus nulla, mattis ut leo eget, bibendum consequat enim.</span></p><p style=\"text-align: justify;\"><span style=\"font-family: Arial,Helvetica,sans-serif;\">Vestibulum egestas, nisl id luctus gravida, elit turpis placerat metus, ac vehicula nisl leo at massa. Aenean quis augue vestibulum, sagittis metus at, consectetur orci. Fusce venenatis viverra nisi, sit amet maximus massa imperdiet vitae. Phasellus porttitor id turpis vel tempor. Maecenas venenatis dictum erat, eu posuere arcu aliquet ac. Aliquam suscipit justo malesuada felis lobortis feugiat. Vivamus at diam sit amet tortor aliquet pulvinar <em>a in justo. Phasellus diam diam, faucibus id quam sed, sagittis egestas justo. Integer ut ex quis turpis venenatis volutpat ac quis mauri</em>s. Nam ipsum leo, varius interdum nisl sed, tempor ullamcorper neque. Donec molestie magna quis orci consequat rutrum. Sed vestibulum, tellus non auctor sollicitudin, nulla diam accumsan ante, in fermentum libero tortor eu enim. Vestibulum est lacus, pharetra et posuere ornare, dictum et nisl.</span></p><p style=\"text-align: justify;\"><span style=\"font-family: Arial,Helvetica,sans-serif;\">Aliquam rutrum quam eu purus dapibus ultrices. Praesent porta velit nec tempus aliquet. Pellentesque leo ligula, tincidunt sed vehicula at, varius dictum ex. Donec lobortis vel lectus molestie elementum. Donec mi mauris, malesuada vitae felis sit amet, cursus pretium quam. Nunc convallis leo ex, quis pellentesque ligula lobortis ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean pharetra tristique facilisis. Donec ullamcorper enim eu sem viverra lobortis. Aenean eleifend tempus imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ac magna nibh. Sed sem libero, ullamcorper nec cursus non, porttitor et tellus.</span></p>",
+      "createdBy": 1,
+      "createdByName": "himanshu",
+      "createdOn": "Sun Nov 19 2017",
+      "category": "Non Technical",
+      "id": 4
+    },
+    {
+      "Title": "Recursion By Kanav",
+      "body": "<p style=\"text-align: center;\"><strong><span style=\"font-family: Arial, Helvetica, sans-serif; font-size: 36px; color: rgb(226, 80, 65);\">RECURSION- PART 1</span></strong></p><p>This part aims at developing basic idea behind recursion. Next part aims at writing backtracking solutions, some tree problems and Dynamic Programming.</p><blockquote><p>&ldquo;The first step, known as the base case, is to prove the given statement for the first natural number. The second step, known as the inductive step, is to prove that the given statement for any one natural number implies the given statement for the next natural number. From these two steps, mathematical induction is the rule from which we infer that the given statement is established for all natural numbers.&rdquo;</p></blockquote><p>Below is the pseudo-code for a recursive function that returns true if the given array is sorted in non-decreasing order and false otherwise.</p><p><br></p><p><br></p>",
       "createdBy": 2,
       "createdByName": "kanav",
-      "createdOn": "Sat Nov 18 2017",
+      "createdOn": "Sun Nov 19 2017",
+      "category": "Technical",
+      "id": 5
+    },
+    {
+      "Title": "Lorem ipsum",
+      "body": "<h1 style=\"text-align: center;\">Lorem Ipsum</h1><h4 style=\"text-align: justify;\">&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</h4><h5 style=\"text-align: justify;\">&quot;There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...&quot;</h5><hr style=\"text-align: justify;\"><p style=\"text-align: justify;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed orci in augue consectetur condimentum non ut felis. Praesent non lacus ligula. In faucibus risus sem, nec egestas ante interdum nec. Suspendisse sed ante eu purus congue rhoncus id ac dolor. Duis mi nunc, gravida a suscipit sit amet, pellentesque a nunc. Morbi euismod est vitae nunc venenatis, id sagittis magna interdum. Praesent pretium gravida neque, nec ultricies libero. Praesent posuere consectetur augue, non posuere ipsum pellentesque ut. Morbi venenatis dolor vel nisl consequat, id lobortis tortor hendrerit.</p><p style=\"text-align: justify;\">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent dapibus lectus in arcu laoreet, sed lacinia tortor molestie. Praesent facilisis feugiat quam ac dignissim. Vivamus luctus sapien vel ipsum vehicula interdum. Ut rutrum ipsum ligula, vel consectetur justo pellentesque quis. Nulla efficitur commodo sem nec mollis. Morbi congue aliquet dui, non iaculis urna suscipit sit amet. Aliquam erat volutpat. Donec suscipit quis nibh in commodo. Quisque ultrices massa vel justo tempor, eu mattis lorem aliquet.</p><p style=\"text-align: justify;\">Aliquam viverra tellus ut lacus aliquet elementum. Curabitur at maximus diam. Duis vulputate dignissim diam consectetur commodo. Morbi non magna ultricies, scelerisque elit convallis, consequat arcu. Phasellus at urna volutpat, posuere augue sed, posuere augue. Nam eros lectus, consectetur nec venenatis faucibus, porta et sem. Praesent vel feugiat magna. Vestibulum sed molestie enim, in sagittis urna. Praesent euismod, est sit amet laoreet egestas, ex dui placerat enim, sed egestas ante ipsum vel metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean venenatis eget tellus et sollicitudin. Sed in dolor ullamcorper erat tincidunt malesuada lacinia et sem. Fusce risus nulla, mattis ut leo eget, bibendum consequat enim.</p><p style=\"text-align: justify;\">Vestibulum egestas, nisl id luctus gravida, elit turpis placerat metus, ac vehicula nisl leo at massa. Aenean quis augue vestibulum, sagittis metus at, consectetur orci. Fusce venenatis viverra nisi, sit amet maximus massa imperdiet vitae. Phasellus porttitor id turpis vel tempor. Maecenas venenatis dictum erat, eu posuere arcu aliquet ac. Aliquam suscipit justo malesuada felis lobortis feugiat. Vivamus at diam sit amet tortor aliquet pulvinar a in justo. Phasellus diam diam, faucibus id quam sed, sagittis egestas justo. Integer ut ex quis turpis venenatis volutpat ac quis mauris. Nam ipsum leo, varius interdum nisl sed, tempor ullamcorper neque. Donec molestie magna quis orci consequat rutrum. Sed vestibulum, tellus non auctor sollicitudin, nulla diam accumsan ante, in fermentum libero tortor eu enim. Vestibulum est lacus, pharetra et posuere ornare, dictum et nisl.</p><p style=\"text-align: justify;\">Aliquam rutrum quam eu purus dapibus ultrices. Praesent porta velit nec tempus aliquet. Pellentesque leo ligula, tincidunt sed vehicula at, varius dictum ex. Donec lobortis vel lectus molestie elementum. Donec mi mauris, malesuada vitae felis sit amet, cursus pretium quam. Nunc convallis leo ex, quis pellentesque ligula lobortis ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean pharetra tristique facilisis. Donec ullamcorper enim eu sem viverra lobortis. Aenean eleifend tempus imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ac magna nibh. Sed sem libero, ullamcorper nec cursus non, porttitor et tellus.</p>",
+      "createdBy": 1,
+      "createdByName": "himanshu",
+      "createdOn": "Sun Nov 19 2017",
       "category": "Non Technical",
-      "id": 3
+      "id": 6
     }
   ]
 }
