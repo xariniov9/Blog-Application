@@ -6,7 +6,8 @@
       "password": "mangoes",
       "favorites": [
         2,
-        4
+        4,
+        8
       ]
     },
     {
@@ -14,7 +15,10 @@
       "username": "kanav",
       "password": "grapes",
       "favorites": [
-        2
+        2,
+        8,
+        1,
+        4
       ]
     },
     {
@@ -28,13 +32,13 @@
   ],
   "blogs": [
     {
-      "Title": "Himanshu is great",
-      "body": "<blockquote><p>himanshu is great !</p></blockquote><p>hello this is a great qoute by Himanshu Tiwari!</p>",
-      "createdBy": 2,
-      "createdByName": "kanav",
-      "createdOn": "Sat Nov 18 2017",
-      "category": "Non Technical",
-      "id": 2
+      "Title": "Another Technical Blog",
+      "body": "<p style=\"text-align: center;\"><strong><span style=\"color: rgb(184, 49, 47); font-size: 36px;\">RECURSION- PART 1</span></strong></p><p>This part aims at developing basic idea behind recursion. Next part aims at writing backtracking solutions, some tree problems and Dynamic Programming.</p><blockquote><p>&ldquo;The first step, known as the base case, is to prove the given statement for the first natural number. The second step, known as the inductive step, is to prove that the given statement for any one natural number implies the given statement for the next natural number. From these two steps, mathematical induction is the rule from which we infer that the given statement is established for all natural numbers.&rdquo;</p></blockquote><p><strong>Back to Problem..</strong></p><p>In our problem we can assume that our given array is represented as count[1..100000] with all elements as zero and we build a segment tree over it. (You need to figure out the size of stree[] <img draggable=\"false\" alt=\"😉\" src=\"https://i.froala.com/download/8579178075b1bbdf88d7c259e2fde0917c07bcff.jpg?1511073901\" class=\"fr-fic fr-dii\">&nbsp;)</p><p>In queries of first type, we first increment count[x] by 1 and update the segment tree by update(root, 1, 100000, x, count[x]).For queries of second type the result is getSum(root, 1, 100000, l, r).</p><p><strong>Exercise</strong> : <strong><em>How would you m<strong>od</strong>ify the above solution to return the number of distinct elements appeared in the range [l..r]?<br></em></strong></p><p><strong>Exercise</strong> : <strong><em>Modify the above implementation to support update and getmax. getmax function returns the maximum element in a range.</em></strong></p><p><strong>Some Tree problems :</strong></p><ol><li>Find the largest and second largest elements in a tree.</li><li>Print the path from root to a given node.</li><li>Find the diameter of a tree.</li><li>Lowest Common Ancestor of two nodes in a binary tree.</li></ol>",
+      "createdBy": 1,
+      "createdByName": "himanshu",
+      "createdOn": "Sun Nov 19 2017",
+      "category": "Technical",
+      "id": 1
     },
     {
       "Title": "My First Blog",
@@ -64,13 +68,13 @@
       "id": 6
     },
     {
-      "Title": "Another Technical Blog",
-      "body": "<p style=\"text-align: center;\"><strong><span style=\"color: rgb(184, 49, 47); font-size: 36px;\">RECURSION- PART 1</span></strong></p><p>This part aims at developing basic idea behind recursion. Next part aims at writing backtracking solutions, some tree problems and Dynamic Programming.</p><blockquote><p>&ldquo;The first step, known as the base case, is to prove the given statement for the first natural number. The second step, known as the inductive step, is to prove that the given statement for any one natural number implies the given statement for the next natural number. From these two steps, mathematical induction is the rule from which we infer that the given statement is established for all natural numbers.&rdquo;</p></blockquote><p><strong>Back to Problem..</strong></p><p>In our problem we can assume that our given array is represented as count[1..100000] with all elements as zero and we build a segment tree over it. (You need to figure out the size of stree[] <img draggable=\"false\" alt=\"😉\" src=\"https://i.froala.com/download/8579178075b1bbdf88d7c259e2fde0917c07bcff.jpg?1511073901\" class=\"fr-fic fr-dii\">&nbsp;)</p><p>In queries of first type, we first increment count[x] by 1 and update the segment tree by update(root, 1, 100000, x, count[x]).For queries of second type the result is getSum(root, 1, 100000, l, r).</p><p><strong>Exercise</strong> : <strong><em>How would you m<strong>od</strong>ify the above solution to return the number of distinct elements appeared in the range [l..r]?<br></em></strong></p><p><strong>Exercise</strong> : <strong><em>Modify the above implementation to support update and getmax. getmax function returns the maximum element in a range.</em></strong></p><p><strong>Some Tree problems :</strong></p><ol><li>Find the largest and second largest elements in a tree.</li><li>Print the path from root to a given node.</li><li>Find the diameter of a tree.</li><li>Lowest Common Ancestor of two nodes in a binary tree.</li></ol>",
+      "Title": "Sales 2017",
+      "body": "<p style=\"text-align: center;\"><strong><em><span style=\"font-family: Georgia, serif; font-size: 36px; color: rgb(147, 101, 184);\">Sales 2017</span></em></strong></p><hr><h4 style=\"text-align: center;\"><span style=\"font-family: Verdana,Geneva,sans-serif;\">&quot;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...&quot;</span></h4><h5 style=\"text-align: center;\"><span style=\"font-family: Verdana,Geneva,sans-serif;\">&quot;There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...&quot;</span></h5><table style=\"width: 99%; margin-left: calc(1%);\"><thead><tr><th><span style=\"font-family: Georgia,serif;\">Item<br></span><br></th><th><span style=\"font-family: Georgia,serif;\">Sales<br></span><br></th></tr></thead><tbody><tr><td style=\"width: 50.0000%;\"><span style=\"font-family: Georgia,serif;\">Rajma<br></span><br></td><td style=\"width: 50.0000%;\"><span style=\"font-family: Georgia,serif;\">23332.00<br></span><br></td></tr><tr><td><span style=\"font-family: Georgia,serif;\">Chawal<br></span><br></td><td><span style=\"font-family: Georgia,serif;\">2444.00<br></span><br></td></tr><tr><td style=\"width: 50.0000%;\"><span style=\"font-family: Georgia,serif;\">Chhole<br></span><br></td><td style=\"width: 50.0000%;\"><span style=\"font-family: Georgia,serif;\">34344.00<br></span><br></td></tr><tr><td><span style=\"font-family: Georgia,serif;\">Maida<br></span><br></td><td><span style=\"font-family: Georgia,serif;\">23332.00<br></span><br></td></tr><tr><td><span style=\"font-family: Georgia,serif;\">Atta<br></span><br></td><td><span style=\"font-family: Georgia,serif;\">78634.00<br></span><br></td></tr></tbody></table><p><span style=\"font-family: Georgia,serif;\"><br></span></p><h3 style=\"text-align: center;\"><span style=\"font-family: Georgia,serif;\">Section 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot;, written by Cicero in 45 BC</span></h3><p style=\"text-align: justify;\"><span style=\"font-family: Georgia,serif;\">&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.&quot;</span></p><p><span style=\"font-family: Georgia,serif;\">The above data shows the 2017 sales of our company!</span></p><p><span style=\"font-family: Georgia,serif;\">Enjoy.</span></p>",
       "createdBy": 1,
       "createdByName": "himanshu",
       "createdOn": "Sun Nov 19 2017",
-      "category": "Technical",
-      "id": 7
+      "category": "Non Technical",
+      "id": 8
     }
   ]
 }
