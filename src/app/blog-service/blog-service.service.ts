@@ -3,6 +3,7 @@ import {Http, Headers} from '@angular/http';
 import 'rxjs/add/operator/map'
 
 const BASE_URL = 'http://localhost:3000/blogs/';
+const BASE_USER_URL = 'http://localhost:3000/users/';
 const header = {headers: new Headers({'Content-Type': 'application/json'})}
 
 @Injectable()
@@ -28,7 +29,13 @@ export class BlogServiceService {
 
   updateData(data) {
     return this.http.patch(`BASE_URL${data.id}`,data, header)
-      .map(res => res.json())
+      .map(res => res.json());
+  }
+
+  updateFavorites(data) {
+    const fullURL = BASE_USER_URL + `${data.id}`
+    return this.http.put(fullURL, data, header)
+      .map(res => res.json());
   }
 
   deleteData(data) {

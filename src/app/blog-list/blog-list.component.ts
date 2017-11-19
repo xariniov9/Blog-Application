@@ -74,4 +74,16 @@ export class BlogListComponent implements   OnInit {
       blog['Title'].toLocaleLowerCase().indexOf(filterBy) !== -1);
   }
 
+  markFavorite(blog: Object ) {
+    if (this.currentUser['favorites'].indexOf(blog['id']) === -1) {
+      this.currentUser['favorites'].push(blog['id']);
+      localStorage.setItem('currentUser', JSON.stringify(this.currentUser));
+      this.request.updateFavorites(this.currentUser)
+        .subscribe(data => {
+          console.log(data);
+          this.favoriteBlogs.push(blog);
+        });
+    }
+  }
+
 }

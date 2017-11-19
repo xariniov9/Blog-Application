@@ -37,6 +37,7 @@
               <td>{{blog.createdByName}}</td>
               <td>{{ blog.createdOn }}</td>
               <td>{{ blog.category }}</td>
+              <td ><input *ngIf="currentUser.favorites.indexOf(blog.id) === -1" type="button" class="btn btn-primary btn-sm" value="Mark Fav" (click)="markFavorite(blog)"/></td>
             </tr>
             </tbody>
           </table>
@@ -99,7 +100,7 @@
         </div>
 
 
-        <input type="button" value="Add Blog" (click)="AddBlog()">
+        <input type="button" class="btn btn-primary btn-sm" value="Add Blog" (click)="AddBlog()">
       </form>
     </div>
   </div>

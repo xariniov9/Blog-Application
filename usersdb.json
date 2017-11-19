@@ -5,7 +5,9 @@
       "username": "himanshu",
       "password": "mangoes",
       "favorites": [
-        1
+        1,
+        2,
+        4
       ]
     },
     {
@@ -50,15 +52,6 @@
       "createdOn": "Sat Nov 18 2017",
       "category": "Non Technical",
       "id": 3
-    },
-    {
-      "Title": "photo",
-      "body": "<p><img src=\"https://i.froala.com/download/f1b2f89b9e3ba40b81245b2d8a25cc82d11ccd35.jpg?1511008829\" style=\"width: 300px;\" class=\"fr-fic fr-dib\"></p>",
-      "createdBy": 1,
-      "createdByName": "himanshu",
-      "createdOn": "Sat Nov 18 2017",
-      "category": "Technical",
-      "id": 4
     }
   ]
 }
