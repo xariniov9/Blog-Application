@@ -1,7 +1,11 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+var cors = require('cors');
+var bodyParser = require("body-parser");
 
+app.use(bodyParser.json());
+app.use(cors());
 // If an incoming request uses
 // a protocol other than HTTPS,
 // redirect that request to the
@@ -22,7 +26,7 @@ app.use(forceSSL());
 
 // Run the app by serving the static files
 // in the dist directory
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/'));
 
 // For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
