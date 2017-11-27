@@ -42,6 +42,7 @@ export class LoginComponent implements OnInit {
           }
         },
         error => {
+          alert(error);
           this.loading = false;
           window.location.reload();
         });
