@@ -13,6 +13,7 @@ export class AuthenticationService {
 
   login(username: string, password: string) {
     alert(BASE_URL);
+    alert(username+password);
     return this.http.get(BASE_URL)
       .map(res => {
         let userData = res.json();
