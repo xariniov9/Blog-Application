@@ -34,7 +34,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(
-      appRoutes
+      appRoutes, {useHash: true}
     ),
     BrowserModule,
     HttpModule,
@@ -42,7 +42,7 @@ const appRoutes: Routes = [
     FroalaEditorModule.forRoot(),
     FroalaViewModule.forRoot()
   ],
-  providers: [AuthenticationService, BlogServiceService, BlogGuardService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [AuthenticationService, BlogServiceService, BlogGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
