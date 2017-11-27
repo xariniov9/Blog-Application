@@ -12,6 +12,7 @@ export class AuthenticationService {
   constructor(private http: Http) { }
 
   login(username: string, password: string) {
+    alert(BASE_URL);
     return this.http.get(BASE_URL)
       .map(res => {
         let userData = res.json();
@@ -19,11 +20,9 @@ export class AuthenticationService {
 
         if(authUser){
           localStorage.setItem('currentUser', JSON.stringify(authUser));
-          console.log(authUser);
         }
         return authUser;
       })
-
   }
 
   logout() {
