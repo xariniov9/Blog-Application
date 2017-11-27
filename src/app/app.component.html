@@ -1,18 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
-<nav class="navbar navbar-left" style="width: 95%; margin: 0 auto;">
-  <div class="container-fluid">
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
     <div class="navbar-header">
       {{title}}
     </div>
-
-    <ul class="nav navbar-nav" style="float: right">
-      <li style=" margin-left: 10px;" *ngIf="currentUser">Welcome {{currentUser['username']}}</li>
-      <li><input style="margin-left: 10px;" *ngIf="!currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="renderForm()" value="LogIn"/></li>
-      <li><input style="margin-left: 10px;" *ngIf="currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="logOut()" value="Log Out"/></li>
-    </ul>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav" style="float: right">
+        <li style=" margin-left: 10px;" *ngIf="currentUser">Welcome {{currentUser['username']}}</li>
+        <li><input style="margin-left: 10px;" *ngIf="!currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="renderForm()" value="LogIn"/></li>
+        <li><input style="margin-left: 10px;" *ngIf="currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="logOut()" value="Log Out"/></li>
+      </ul>
+    </div>
   </div>
-</nav>
+</div>
+
+
 <div class="row" style="width: 100%; margin: 0 auto;">
 <div class="jumbotron" [hidden]="IsHidden" style="text-align: left">
   <h1>Himanshu's Blogger</h1>
