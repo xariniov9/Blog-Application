@@ -11,7 +11,7 @@ import {HttpModule} from "@angular/http";
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogGuardService} from './blog-guard.service';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 //wysiwyg editor
 import { FroalaEditorModule, FroalaViewModule } from 'angular2-froala-wysiwyg';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
@@ -42,7 +42,7 @@ const appRoutes: Routes = [
     FroalaEditorModule.forRoot(),
     FroalaViewModule.forRoot()
   ],
-  providers: [AuthenticationService, BlogServiceService, BlogGuardService],
+  providers: [AuthenticationService, BlogServiceService, BlogGuardService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
