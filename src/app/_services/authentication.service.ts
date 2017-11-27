@@ -3,7 +3,7 @@ import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
-const BASE_URL = 'users/'
+const BASE_URL = 'http://localhost:3000/users/'
 const header = {headers: new Headers({'Content-Type': 'application/json'})}
 
 
