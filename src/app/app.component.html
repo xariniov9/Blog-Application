@@ -1,14 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="navbar navbar-inverse navbar-fixed-top" style="color: bisque;">
+<div class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <h3>{{title}}</h3>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav" style="float: right">
-        <li style="margin-top: 10px; margin-left: 10px; color: bisque;" *ngIf="currentUser">Welcome {{currentUser['username']}}</li>
-        <li><input style="margin-top: 10px; margin-left: 10px; color: bisque;" *ngIf="!currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="renderForm()" value="LogIn"/></li>
-        <li><input style="margin-top: 10px; margin-left: 10px; color: bisque;" *ngIf="currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="logOut()" value="Log Out"/></li>
+        <li style="margin-left: 10px;" *ngIf="currentUser">Welcome {{currentUser['username']}}</li>
+        <li><input style="margin-left: 10px;" *ngIf="!currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="renderForm()" value="LogIn"/></li>
+        <li><input style="margin-left: 10px;" *ngIf="currentUser" type="button" class="btn btn-primary btn-sm"  role="button" (click)="logOut()" value="Log Out"/></li>
       </ul>
     </div>
   </div>
